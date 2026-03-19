@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-
   return (
     <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
 
@@ -23,7 +22,7 @@ export default function Home() {
 
         {/* TOP IMAGE */}
         <Image
-          src="/image.png" // buraya istediğin görseli koy
+          src="/image.png"
           alt="top"
           width={120}
           height={120}
@@ -41,7 +40,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto mt-4">
 
           <Link
-            href={`https://wa.me/905304294656?text=${"Evet"}`}
+            href={`https://wa.me/905304294656?text=Evet`}
             target="_blank"
             className="px-10 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300"
           >
@@ -49,7 +48,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={`https://wa.me/905304294656?text=${"Kesinlikle"}`}
+            href={`https://wa.me/905304294656?text=Kesinlikle`}
             target="_blank"
             className="px-10 py-4 rounded-2xl bg-white/10 border border-white/30 text-white font-semibold text-lg backdrop-blur-md hover:bg-white/20 hover:scale-105 transition-all duration-300"
           >
@@ -59,6 +58,12 @@ export default function Home() {
         </div>
 
       </div>
+
+      {/* Footer Text */}
+      <p className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white text-xs tracking-wider opacity-60">
+        Bir Taha Tan Ürünüdür
+      </p>
+
     </div>
   );
 }
